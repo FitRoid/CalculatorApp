@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Josefin Sans;
+    background-color: rgb(185, 247, 177);
+}
+.container{
+    width: 50%;
+    margin: auto;
+    padding-top: 10%;
+    display: flexbox;
+    align-content: center;
+}
+.container1{
+    margin-bottom: 50px;
+}
+.container2{
+    margin-top: 50px;
+}
+.form_container{
+    margin-top: 10px;
+}
+.form_Imput{
+    margin-left: 10px;
+    padding: 5px 10px;
+    text-align: center;
+    border-style: none;
+    border-radius: 15px;
+
+}
+.btn_container .btn{
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background-color: rgb(120, 218, 40);
+    border-style: none;
+    border-radius: 10px;
+    font-weight: 800;
+}
+.btn:hover{
+    background-color: rgb(187, 199, 22);
+}

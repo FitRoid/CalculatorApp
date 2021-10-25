@@ -1,0 +1,62 @@
+<html lang="en" ng-app="converterApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <body ng-controller="converterControler">
+        <div class="container">
+            <div class="container1">
+                <h1 class="container_title">Convertidor de Pesos a Dolares</h1>
+                <div class="form_container">
+                    <label for="money">Ingrese el Monto</label>
+                    <input type="text" class="form_Imput" 
+                    placeholder="Monto" ng-model="moneyImput">
+                </div>
+                <div class="btn_container">
+                    <button class="btn" ng-click='calcular()'>CALCULADORA</button>
+                </div>
+                <hr>
+                <p class="text"> El dolar es de...
+                    <b><strong>$ {{dollar | number:3}}</strong></b></p>
+        
+            </div>
+
+            <hr>
+
+            <div class="container2">
+                <h1 class="container_title">Convertidor de Dolares a Pesos</h1>
+                <div class="form_container">
+                    <label for="money_D">Ingrese el Monto</label>
+                    <input type="text" class="form_Imput" 
+                    placeholder="Monto" ng-model="money_D_Imput">
+                </div>
+                <div class="btn_container">
+                    <button class="btn" ng-click='calcular_D()'>CALCULADORA</button>
+                </div>
+                <hr>
+                <p class="text"> El peso es de...
+                    <b><strong>$ {{peso | number:3}}</strong></b></p>
+        
+            </div>
+        </div>
+
+        
+
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+            <!-- Alertas -->
+            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+            <!-- controladores -->
+            <script src="Scrip.js"></script>
+
+    </body>
+
+</html>
